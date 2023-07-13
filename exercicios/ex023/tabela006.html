@@ -9,6 +9,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
+            position: relative;
             border-collapse: collapse;
         }
         caption{
@@ -23,7 +24,17 @@
         tr:nth-child(even){
             background-color: rgb(228, 228, 228);
         }
-        
+        div#container{
+            overflow-x: auto;
+        }
+        td.prod, th.prod{
+            position: sticky;
+            left: -1px;
+            background-color: white;
+        }
+        .prod{
+            border: 1px solid black;
+        }
     </style>
 </head>
 <body>
@@ -35,24 +46,24 @@
             <caption>Tabelas responsivas</caption>
             <thead>
                 <tr>
-                    <th>Produto</th>
-                    <th>Jan</th>
-                    <th>Fev</th>
-                    <th>Mar</th>
-                    <th>Abr</th>
-                    <th>Mai</th>
-                    <th>Jun</th>
-                    <th>Jul</th>
-                    <th>Ago</th>
-                    <th>Set</th>
-                    <th>Out</th>
-                    <th>Nov</th>
-                    <th>Dez</th>
+                    <th scope="col" class="prod">Produto</th>
+                    <th scope="col">Jan</th>
+                    <th scope="col">Fev</th>
+                    <th scope="col">Mar</th>
+                    <th scope="col">Abr</th>
+                    <th scope="col">Mai</th>
+                    <th scope="col">Jun</th>
+                    <th scope="col">Jul</th>
+                    <th scope="col">Ago</th>
+                    <th scope="col">Set</th>
+                    <th scope="col">Out</th>
+                    <th scope="col">Nov</th>
+                    <th scope="col">Dez</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>TV 40"</td>
+                    <td class="prod">TV 40"</td>
                     <td>01</td>
                     <td>04</td>
                     <td>07</td>
@@ -67,7 +78,7 @@
                     <td>16</td>
                 </tr>
                 <tr>
-                    <td>Home Theater</td>
+                    <td class="prod">Home Theater</td>
                     <td>01</td>
                     <td>04</td>
                     <td>07</td>
@@ -82,7 +93,7 @@
                     <td>16</td>
                 </tr>
                 <tr>
-                    <td>Samsung Galaxy S20</td>
+                    <td class="prod">Samsung Galaxy S20</td>
                     <td>01</td>
                     <td>04</td>
                     <td>07</td>
@@ -97,7 +108,7 @@
                     <td>16</td>
                 </tr>
                 <tr>
-                    <td>iPad Mini</td>
+                    <td class="prod">iPad Mini</td>
                     <td>01</td>
                     <td>04</td>
                     <td>07</td>
@@ -112,7 +123,7 @@
                     <td>16</td>
                 </tr>
                 <tr>
-                    <td>PlayStation 4</td>
+                    <td class="prod">PlayStation 4</td>
                     <td>01</td>
                     <td>04</td>
                     <td>07</td>
@@ -126,7 +137,7 @@
                     <td>04</td>
                     <td>16</td>
                 </tr>
-                <tr><td>Lava louças</td>
+                <tr><td class="prod">Lava louças</td>
                     <td>01</td>
                     <td>04</td>
                     <td>07</td>
@@ -141,7 +152,7 @@
                     <td>16</td>
                 </tr>
                 <tr>
-                    <td>Amazon Echo</td>
+                    <td class="prod">Amazon Echo</td>
                     <td>01</td>
                     <td>04</td>
                     <td>07</td>
